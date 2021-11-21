@@ -28,11 +28,11 @@ variable "data_dir" {
     default         = "/var/www/nextcloud/data"
     description     = "Directory of nextcloud metadata inside webserver instance"
 }
-variable "keyname" {
+//variable "keyname" {
     # If you want to SSH to the webserver instance, you should change this default value to your aws key-pair.
-    default         = "sds-terraform"
-    description     = "Key-pair for SSH to webserver ec2 instance"
-}
+//    default         = "sds-terraform"
+//    description     = "Key-pair for SSH to webserver ec2 instance"
+//}
 
 ##################### public/private ip variables #####################
 variable "webserver-public-nic-ip" {

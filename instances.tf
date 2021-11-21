@@ -3,7 +3,8 @@ resource "aws_instance" "webserver-instance" {
     instance_type               = var.instance_type
     availability_zone           = var.availability_zone
     iam_instance_profile        = aws_iam_instance_profile.webserver-profile.name
-    key_name                    = var.keyname
+    // For SSH test
+    // key_name                    = var.keyname
 
     network_interface {
         device_index            = 0
@@ -27,7 +28,8 @@ resource "aws_instance" "database-instance" {
     instance_type               = var.instance_type
     availability_zone           = var.availability_zone
     iam_instance_profile        = aws_iam_instance_profile.database-profile.name
-    key_name                    = var.keyname
+    // For SSH test
+    // key_name                    = var.keyname
 
     network_interface {
         device_index            = 0
