@@ -19,10 +19,6 @@ After that, you can start terraform by running this following command.
 
 ```bash
 terraform init
-```
-```bash
 terraform plan
-```
-```bash
 terraform apply
 ```
