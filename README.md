@@ -32,3 +32,6 @@ terraform init
 terraform plan
 terraform apply
 ```
+
+## Demo video
+https://www.youtube.com/watch?v=Er6ndzvhjpc
