@@ -3,8 +3,15 @@ resource "aws_instance" "webserver-instance" {
     instance_type               = var.instance_type
     availability_zone           = var.availability_zone
     iam_instance_profile        = aws_iam_instance_profile.webserver-profile.name
+<<<<<<< HEAD
     # Key_name using for SSH test
     # key_name                    = var.keyname
+||||||| 224f157
+    key_name                    = var.keyname
+=======
+    // For SSH test
+    // key_name                    = var.keyname
+>>>>>>> d0aac43b91c10f6ea93f3a3afb8c5d24660a31f7
 
     network_interface {
         device_index            = 0
@@ -28,8 +35,15 @@ resource "aws_instance" "database-instance" {
     instance_type               = var.instance_type
     availability_zone           = var.availability_zone
     iam_instance_profile        = aws_iam_instance_profile.database-profile.name
+<<<<<<< HEAD
     # Key_name using for SSH test
     # key_name                    = var.keyname
+||||||| 224f157
+    key_name                    = var.keyname
+=======
+    // For SSH test
+    // key_name                    = var.keyname
+>>>>>>> d0aac43b91c10f6ea93f3a3afb8c5d24660a31f7
 
     network_interface {
         device_index            = 0
